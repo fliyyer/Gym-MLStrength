@@ -24,7 +24,7 @@ a {
 }
 
 body {
-  background: #000;
+  background:  #182430;
 }
 
 /* Navbar */
@@ -34,7 +34,7 @@ body {
     padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--black-color);
+    background-color: #101820;
   }
   
   .logo {
@@ -101,7 +101,10 @@ body {
     display: none;
   }  
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 769px) {
+    .nav {
+      padding: 10px 80px;
+    }
   .nav__link {
     display: block;
     position: static;
@@ -197,11 +200,38 @@ footer {
   width: 100%;
   padding: 16px;
   color: #FFFFFF;
-  background-color: var(--black-color);
+  background-color: #101820;
   text-align: center;
   font-size: 18px;
 }
 
+footer ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  cursor: pointer;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+
+@media screen and (min-width: 1370px) {
+  .nav {
+    padding: 10px 320px;
+  }
+}
 
 
 

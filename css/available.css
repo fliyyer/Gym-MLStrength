@@ -2,7 +2,9 @@
 
 .time-desk {
     margin-top: 24px;
+    margin-bottom: 24px;
     text-align: center;
+    color: #fff;
 }
 
 .available-time {
@@ -107,7 +109,7 @@
 
 @media (min-width: 992px) {
   .available-time {
-    padding: 40px 30px 80px;
+    padding: 40px 120px 80px;
   }
 
   .available-time__photo {
@@ -127,6 +129,13 @@
    
   }
 }
+
+@media screen and (min-width: 1370px) {
+  .available-time {
+    padding: 100px 330px;
+  }
+}
+
 
 footer {
     position: absolute;
