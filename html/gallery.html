@@ -4,26 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>ML Strength | Gallery</title>
+    <link rel="stylesheet" href="../css/gallery.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="/" class="logo">Gym<span>MEN</span></a>
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-        <div class="nav__link hide">
-          <a href="#">Home</a>
-          <a href="#">Available Time</a>
-          <a href="#">ML Strength Classes</a>
-          <a href="#">Gallery</a>
-          <button class="btn-login">Login</button>
-        </div>
-      </nav>
+      <custom-navbar></custom-navbar>
     </header>
     <main class="main-gallery">
       <h1 class="gallery-title">Our Gallery</h1>
@@ -33,17 +20,9 @@
         <img src="../img/gallery3.jpg" alt="Gambar 3" />
       </div>
     </main>
-    <footer>
-      <div class="footer-content">
-        <div class="logo">
-          <h6>Logo</h6>
-        </div>
-        <div class="social-media">
-          <a href="#"><i class="fab fa-facebook">Tes</i></a>
-          <a href="#"><i class="fab fa-twitter">Tes</i></a>
-        </div>
-      </div>
-    </footer>
+    <custom-footer></custom-footer>
   </body>
   <script src="../js/main.js"></script>
+  <script src="../js/custom-navbar.js"></script>
+  <script src="../js/custom-footer.js"></script>
 </html>

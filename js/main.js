@@ -1,13 +1,6 @@
-const hamburger = document.querySelector('.hamburger');
-const navLink = document.querySelector('.nav__link');
-
-hamburger.addEventListener('click', () => {
-  navLink.classList.toggle('hide');
-});
-
 // Available Time
-
-let carouselImages = document.querySelectorAll(".carousel img");
+// Availablel Time
+    let carouselImages = document.querySelectorAll(".carousel img");
     let currentImage = 0;
     let maxImage = carouselImages.length - 1;
 
@@ -22,3 +15,19 @@ let carouselImages = document.querySelectorAll(".carousel img");
     }
 
     setInterval(showNextImage, 3000);
+
+  // Login 
+      const sign_in_btn = document.querySelector("#sign-in-btn");
+      const sign_up_btn = document.querySelector("#sign-up-btn");
+      const container = document.querySelector(".container");
+
+      sign_up_btn.addEventListener("click", () => {
+        container.classList.add("sign-up-mode");
+      });
+
+      sign_in_btn.addEventListener("click", () => {
+        container.classList.remove("sign-up-mode");
+      });
+      
+
+

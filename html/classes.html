@@ -5,25 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css//style.css" />
-    <title>ML Strength | ML Strength Classes</title>
+    <title>ML Strength | Classes</title>
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="/" class="logo">ML<span>Strength</span></a>
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-        <div class="nav__link hide">
-          <a href="#">Home</a>
-          <a href="#">Available Time</a>
-          <a href="#">ML Strength Classes</a>
-          <a href="#">Gallery</a>
-          <button class="btn-login">Login</button>
-        </div>
-      </nav>
+      <custom-navbar></custom-navbar>
     </header>
     <main class="main-strength">
       <h1 class="gallery-title">ML-Strength Classes</h1>
@@ -36,7 +22,6 @@
     <section>
       <div class="list-class">
         <div class="left-column">
-          <h2>Left Column</h2>
           <ol>
             <li>Body Attack</li>
             <li>Zumba</li>
@@ -54,7 +39,6 @@
           </ol>
         </div>
         <div class="right-column">
-          <h2>Right Column</h2>
           <ol>
             <li>Aqua fit & Aqua mode</li>
             <li>Boxing & Tae Box</li>
@@ -73,5 +57,9 @@
         </div>
       </div>
     </section>
+
+    <custom-footer></custom-footer>
   </body>
+  <script src="../js/custom-navbar.js"></script>
+  <script src="../js/custom-footer.js"></script>
 </html>

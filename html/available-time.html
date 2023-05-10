@@ -4,26 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gyn Men | Available Time</title>
+    <title>ML Strength | Available Time</title>
+    <link rel="stylesheet" href="../css//available.css">
     <link rel="stylesheet" href="../css/style.css" />
+    
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="/" class="logo">Gym<span>MEN</span></a>
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-        <div class="nav__link hide">
-          <a href="#">Home</a>
-          <a href="#">Available Time</a>
-          <a href="#">ML Strength Classes</a>
-          <a href="#">Gallery</a>
-          <button class="btn-login">Login</button>
-        </div>
-      </nav>
+     <custom-navbar></custom-navbar>
     </header>
     <main>
       <h1 class="time-desk">Available Time</h1>
@@ -51,34 +39,9 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-content">
-        <div class="logo">
-          <h6>Logo</h6>
-        </div>
-        <div class="social-media">
-          <a href="#"><i class="fab fa-facebook">Tes</i></a>
-          <a href="#"><i class="fab fa-twitter">Tes</i></a>
-        </div>
-      </div>
-    </footer>
+    <custom-footer></custom-footer>
   </body>
-  <script>
-    let carouselImages = document.querySelectorAll(".carousel img");
-    let currentImage = 0;
-    let maxImage = carouselImages.length - 1;
-
-    function showNextImage() {
-      carouselImages[currentImage].classList.remove("active");
-      if (currentImage === maxImage) {
-        currentImage = 0;
-      } else {
-        currentImage++;
-      }
-      carouselImages[currentImage].classList.add("active");
-    }
-
-    setInterval(showNextImage, 3000);
-  </script>
-  <script src="./js/main.js"></script>
+  <script src="../js//main.js"></script>
+  <script src="../js/custom-navbar.js"></script>
+  <script src="../js/custom-footer.js"></script>
 </html>

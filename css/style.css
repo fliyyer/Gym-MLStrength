@@ -1,24 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'montserrat', sans-serif;
   }
   
   :root {
     --primary-color: #D21312;
     --hover-color: #ED2B2A;
     --secondary-color: #D9D9D9;
-    --black-color: #181818;
+    --black-color: #000;
     --white-color: #ffffff;
     --bg-color: #F9FBFC;
-}
-  
-body {
-    font-family: sans-serif;
 }
   
 a {
@@ -27,20 +23,23 @@ a {
     font-size: 16px;
 }
 
+body {
+  background: #000;
+}
+
 /* Navbar */
 
 .nav {
     display: flex;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
     background-color: var(--black-color);
   }
   
   .logo {
     font-size: 32px;
     color: var(--primary-color);
-    padding-left: 20px;
     font-weight: bold;
   }
 
@@ -55,9 +54,9 @@ a {
   
   .hamburger .line {
     display: block;
-    width: 32px;
-    height: 5px;
-    margin-bottom: 10px;
+    width: 28px;
+    height: 3px;
+    margin-bottom: 5px;
     background-color: var(--bg-color);
   }
   
@@ -74,22 +73,33 @@ a {
     text-align: center;
     padding: 10px 0;
   }
+
+  .nav__link a:hover{
+    color: var(--primary-color);
+  }
   
   .btn-login {
     background-color: var(--primary-color);
     color: #fff;
-    padding: 6px 24px;
+    padding: 2px 12px;
+    margin: 0 auto;
     border-radius: 8px;
     cursor: pointer;
   }
 
   .btn-login:hover{
     background-color: var(--hover-color);
+    color: #fff;
+  }
+
+  a.btn-login:hover{
+    background-color: var(--hover-color);
+    color: #fff;
   }
   
   .hide {
     display: none;
-  }
+  }  
 
   @media screen and (min-width: 600px) {
   .nav__link {
@@ -99,10 +109,6 @@ a {
     margin-right: 20px;
     background: none;
   }
-
-  /* .btn-login {
-    margin: 0 140px;
-  } */
 
   .nav__link a {
     display: inline-block;
@@ -187,45 +193,13 @@ a {
 
 /* Footer Styles */
 footer {
-  position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  padding: 16px;
+  color: #FFFFFF;
   background-color: var(--black-color);
-  color: #fff;
-  padding: 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo h6 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.social-media {
-  display: flex;
-}
-
-.social-media a {
-  display: inline-block;
-  margin-left: 10px;
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.social-media a:hover {
-  color: #1DA1F2;
-}
-
-.social-media i {
-  transition: color 0.2s ease-in-out;
+  text-align: center;
+  font-size: 18px;
 }
 
   
@@ -239,7 +213,7 @@ footer {
     margin: 16px 0;
     text-align: center;
     font-size: 32px;
-    color: #333;
+    color: #fff;
   }
   
   .gallery {
@@ -270,133 +244,6 @@ footer {
     }
   }  
   
-  
-/* Available Time */
-
-.time-desk {
-    margin-top: 24px;
-    text-align: center;
-}
-
-.available-time {
-  padding: 40px 10px 80px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.available-time__photo {
-  flex: 1 1 100%;
-  max-width: 500px;
-  margin-bottom: 20px;
-}
-
-.available-time__photo img {
-  width: 100%;
-  height: auto;
-  transform: skewX(-10deg);
-}
-
-.available-time__schedule {
-  flex: 1 1 100%;
-  max-width: 500px;
-}
-
-.available-time__schedule h2 {
-  margin-top: 0;
-}
-
-.available-time__schedule ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.available-time__schedule li {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.available-time__schedule li span:first-child {
-  flex: 1;
-  text-align: left;
-}
-
-.available-time__schedule li span:last-child {
-  flex: 1;
-  text-align: right;
-}
-
-.carousel {
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.carousel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.carousel img.active {
-  opacity: 1;
-}
-
-.trapezium {
-  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-}
-
-@media (min-width: 768px) {
-  .available-time {
-    padding: 40px 20px 80px;
-  }
-
-  .available-time__photo {
-    margin-right: 20px;
-  }
-
-  .available-time__schedule {
-    margin-left: 20px;
-  }
-
-  .carousel {
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .available-time {
-    padding: 40px 30px 80px;
-  }
-
-  .available-time__photo {
-    flex: 0 0 calc(50% - 20px);
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
-
-  .available-time__schedule {
-    flex: 0 0 calc(50% - 20px);
-    margin-left: 20px;
-  }
-
-  .carousel {
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
-}
 
 /* ML Strength */
 
@@ -408,7 +255,7 @@ footer {
   margin: 16px 0;
   text-align: center;
   font-size: 32px;
-  color: #333;
+  color: #fff;
 }
 
 .gallery {
@@ -442,6 +289,7 @@ footer {
 .list-class {
   display: flex;
   padding: 40px 80px;
+  color: #fff;
 }
 
 .left-column {
@@ -483,170 +331,3 @@ li {
   }
 }
 
-/* Login Page */
-
-.login {
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px #ccc;
-	margin: 50px auto;
-	max-width: 500px;
-	padding: 20px;
-	text-align: center;
-}
-
-h2 {
-	margin-bottom: 20px;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-}
-
-label {
-	margin-top: 10px;
-	text-align: left;
-}
-
-input[type="text"], input[type="password"] {
-	border: none;
-	border-radius: 5px;
-	box-shadow: 0px 0px 5px #ccc;
-	margin-bottom: 20px;
-	padding: 10px;
-	width: 100%;
-}
-
-input[type="submit"] {
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 0px 0px 5px #ccc;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	margin-top: 20px;
-	padding: 10px;
-	transition: background-color 0.2s ease-in-out;
-}
-
-input[type="submit"]:hover {
-	background-color: #3e8e41;
-}
-
-/* Register */
-
-.body-register {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background: rgb(130, 106, 251);
-}
-.register {
-  position: relative;
-  max-width: 700px;
-  width: 100%;
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-.register header {
-  font-size: 24px;
-  color: var(--black-color);
-  font-weight: 500;
-  text-align: center;
-}
-.register .form {
-  margin-top: 30px;
-}
-.form .input-box {
-  width: 100%;
-}
-.input-box label {
-  color: #333;
-}
-.form :where(.input-box input, .select-box) {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  outline: none;
-  font-size: 1rem;
-  color: #707070;
-  margin-top: 8px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0 15px;
-}
-.input-box input:focus {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-.form .column {
-  display: flex;
-  column-gap: 15px;
-}
-.form .gender-box {
-  margin-top: 20px;
-}
-.gender-box h3 {
-  color: #333;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 8px;
-}
-.form :where(.gender-option, .gender) {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-  flex-wrap: wrap;
-}
-.form .gender {
-  column-gap: 2px;
-}
-.gender input {
-  accent-color: rgb(130, 106, 251);
-}
-.form :where(.gender input, .gender label) {
-  cursor: pointer;
-}
-.gender label {
-  color: #707070;
-}
-.address :where(input, .select-box) {
-  margin-top: 15px;
-}
-.select-box select {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  border: none;
-  color: #707070;
-  font-size: 1rem;
-}
-.form button {
-  height: 55px;
-  width: 100%;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 30px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background: rgb(130, 106, 251);
-}
-.form button:hover {
-  background: rgb(88, 56, 250);
-}
-/*Responsive*/
-@media screen and (max-width: 500px) {
-  .form .column {
-    flex-wrap: wrap;
-  }
-  .form :where(.gender-option, .gender) {
-    row-gap: 15px;
-  }
-}
