@@ -212,6 +212,16 @@ form.sign-in-form {
   transform: translateX(800px);
 }
 
+.help-link {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.help-link:hover {
+  color: #D21312;
+}
+
 /* ANIMATION */
 
 .container.sign-up-mode:before {

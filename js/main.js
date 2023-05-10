@@ -110,7 +110,7 @@ function validateFormRegister() {
     return false;
   }
 
-  // Mengecek apakah email valid
+
   var emailPattern = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
   if (!email.match(emailPattern)) {
     Swal.fire({

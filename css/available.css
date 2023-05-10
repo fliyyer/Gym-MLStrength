@@ -90,21 +90,22 @@
 
 @media (min-width: 768px) {
   .available-time {
+    justify-content: center;
     padding: 40px 20px 80px;
   }
 
-  .available-time__photo {
-    margin-right: 20px;
-  }
 
   .available-time__schedule {
-    margin-left: 20px;
+    margin-top: 32px;
   }
 
   .carousel {
     margin-right: 20px;
     margin-bottom: 0;
   }
+  footer {
+    position: relative;
+}
 }
 
 @media (min-width: 992px) {
@@ -128,6 +129,9 @@
     margin-bottom: 0;
    
   }
+  footer {
+    position: relative;
+}
 }
 
 @media screen and (min-width: 1370px) {
@@ -138,7 +142,7 @@
 
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 16px;
@@ -146,48 +150,3 @@ footer {
     text-align: center;
     font-size: 18px;
   }
-
-  @media (max-width: 768px) {
-    footer {
-        position: relative;
-    }
-    .help-center {
-      width: 40px;
-      height: 40px;
-      bottom: 10px;
-      right: 10px;
-    }
-    
-    .help-center img {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  .help-center {
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #D21312;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-.btn-help{
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-  background-color: #D21312;
-  color: white;
-  font-weight: bold;
-}
-
-.btn-help:hover{
-  color: yellow;
-}

@@ -28,7 +28,7 @@
   }
 
 
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: 1280px) {
     .list-class {
       padding: 50px 340px;
     }
