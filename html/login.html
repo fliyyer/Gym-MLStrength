@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
     <link rel="stylesheet" href="../css/login.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Sign in & Sign up Form</title>
@@ -19,39 +22,51 @@
       <div class="container">
         <div class="forms-container">
           <div class="signin-signup">
-            <form action="#" class="sign-in-form">
+            <form
+              action="available-time.html"
+              class="sign-in-form"
+              onsubmit="return validateForm()"
+            >
               <h2 class="title">Sign in</h2>
               <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" />
+                <input type="text" id="username" placeholder="Username" />
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" />
+                <input type="password" id="password" placeholder="Password" />
               </div>
               <input type="submit" value="Login" class="btn solid" />
             </form>
-            <form action="#" class="sign-up-form">
+            <form
+              action=""
+              class="sign-up-form"
+              onsubmit="return validateFormRegister()"
+            >
               <h2 class="title">Sign up</h2>
               <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" />
+                <input type="text" id="usernames" placeholder="Username" />
               </div>
               <div class="input-field">
                 <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email" />
+                <input type="email" id="email" placeholder="Email" />
               </div>
               <div class="input-field">
                 <i class="fas fa-phone"></i>
-                <input type="number" placeholder="Phone" />
+                <input type="tel" id="phone" placeholder="Phone" />
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" />
+                <input type="password" id="passwords" placeholder="Password" />
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Confirm Password" />
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  placeholder="Confirm Password"
+                />
               </div>
               <input type="submit" class="btn" value="Sign up" />
             </form>

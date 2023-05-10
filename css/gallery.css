@@ -8,7 +8,7 @@
     margin: 16px 0;
     text-align: center;
     font-size: 32px;
-    color: #333;
+    color: #FFFFFF;
   }
   
   .gallery {
@@ -31,13 +31,14 @@
 
   @media screen and (max-width: 768px) {
     .gallery {
-      padding: 0 10px;
+      display: block;
     }
     .gallery img {
       width: 100%;
       margin-bottom: 20px;
     }
-  }  
+  }
+  
   
   
 /* Available Time */
@@ -169,11 +170,12 @@
 
 footer {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 16px;
-  color: #FFFFFF;
-  background-color: #eaea;
-  text-align: center;
-  font-size: 18px;
+}
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
+  }
 }

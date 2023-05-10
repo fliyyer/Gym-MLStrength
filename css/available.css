@@ -64,6 +64,7 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
+  z-index: -1;
 }
 
 .carousel img {
@@ -123,6 +124,7 @@
   .carousel {
     margin-right: 20px;
     margin-bottom: 0;
+   
   }
 }
 
@@ -132,7 +134,51 @@ footer {
     width: 100%;
     padding: 16px;
     color: #FFFFFF;
-    background-color: #eaea;
     text-align: center;
     font-size: 18px;
   }
+
+  @media (max-width: 768px) {
+    footer {
+        position: relative;
+    }
+    .help-center {
+      width: 40px;
+      height: 40px;
+      bottom: 10px;
+      right: 10px;
+    }
+    
+    .help-center img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .help-center {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #D21312;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+.btn-help{
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #D21312;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-help:hover{
+  color: yellow;
+}
